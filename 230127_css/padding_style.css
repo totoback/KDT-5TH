@@ -1,0 +1,6 @@
+@import url("./css_ex_import.css");
+
+h1 {
+  color: pink;
+  background-color: gray;
+}

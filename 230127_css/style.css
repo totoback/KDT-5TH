@@ -1,0 +1,10 @@
+@import url("./padding_style.css");
+
+p {
+  color: yellow;
+  background-color: red;
+}
+span {
+  background-color: tomato;
+  color: wheat;
+}
