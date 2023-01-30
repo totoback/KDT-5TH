@@ -1,0 +1,24 @@
+/* .list {
+  background-color: orange;
+}
+
+#item {
+  background-color: skyblue;
+}
+
+li {
+  background-color: red;
+}
+
+* {
+  background-color: dodgerblue;
+} */
+
+.list li.item {
+  background-color: skyblue;
+  /* 10점 1점 10점 */
+}
+.list li:first-child {
+  background-color: orange;
+  /* 10점 1점 10점 */
+}

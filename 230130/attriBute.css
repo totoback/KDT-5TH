@@ -1,0 +1,18 @@
+/* [disabled] {
+  background-color: red;
+  color: white;
+}
+[type="password"] {
+  background-color: orange;
+} */
+
+[disabled] {
+  background-color: red;
+}
+[placeholder="이름"] {
+  background-color: orange;
+}
+input:not([placeholder]) {
+  background-color: blue;
+}
+/* 플레이스홀더가 없는 값만 배경을 블루로 적용 */

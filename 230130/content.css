@@ -1,0 +1,3 @@
+.box::after {
+  content: "뒤일껄? 맞을껄?";
+}

@@ -1,0 +1,13 @@
+a:hover {
+  color: red;
+}
+
+a:active {
+  background-color: orange;
+}
+
+input:focus {
+  background-color: aliceblue;
+}
+
+/* focus가 안되는 경우 강제로 tabindex -1 로 추가 */
