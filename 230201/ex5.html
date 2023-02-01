@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stackOrder</title>
+    <style>
+      /* positionabsolute,fixed로 선언하면 dlsplay가 블록으로 변경됨 */
+      .parent {
+        background-color: blue;
+        width: 300px;
+        height: 300px;
+        position: relative;
+      }
+      .box1 {
+        position: relative;
+        z-index: 9999;
+        width: 80px;
+        height: 80px;
+        background-color: aliceblue;
+      }
+      .box2 {
+        position: absolute;
+        z-index: 1;
+        top: 40px;
+        left: 20px;
+        background-color: red;
+        width: 200px !important;
+        height: 200px !important;
+      }
+      .box3 {
+        position: absolute;
+        z-index: 9999;
+        top: 60px;
+        width: 100px;
+        height: 150px;
+        bottom: 0;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+    </div>
+  </body>
+</html>

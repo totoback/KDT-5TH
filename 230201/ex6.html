@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .wrap div {
+      border-radius: 100%;
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+    .box {
+      background-color: #fff;
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      position: relative;
+      top: 170px;
+      left: 50px;
+      z-index: 1;
+    }
+    .box div {
+      background-color: black;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      border-radius: 100%;
+      top: 15px;
+      left: 4px;
+    }
+    .div1 {
+      margin-top: 100px;
+      left: 50px;
+      background-color: #00bc52;
+    }
+    .div2 {
+      left: 120px;
+      top: -70px;
+      background-color: #00ca58;
+    }
+    .div3 {
+      top: -130px;
+      left: 180px;
+      background-color: #14e16d;
+    }
+    .div4 {
+      top: -230px;
+      left: 250px;
+      background-color: #15b159;
+    }
+    .div5 {
+      top: -330px;
+      left: 330px;
+      background-color: #00bc52;
+    }
+  </style>
+  <body>
+    <div class="box"><div></div></div>
+    <div class="wrap">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5"></div>
+    </div>
+  </body>
+</html>
