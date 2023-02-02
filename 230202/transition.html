@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        /* width: 100px;
+        height: 100px;
+        background-color: orange;
+        transition-duration: 2s; */
+        /* transition-timing-function: ease-in; 느렸다가 빠르게 하는 속도 */
+        /* transition-timing-function: ease-out; 빨랐다가 느리게 하는 속도 */
+        /* transition-timing-function: linear; 일정한 속도 */
+        /* transition-property: width; */
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        transition: width 3s, background-colo 1s;
+        /* 넓이의 시간을 3초의 걸처서 변경하고, 백그라운드 컬러를 1초 동안 변경한다 */
+        /* transition-duration: 1s; */
+      }
+      div:hover {
+        /* width: 400px;
+        height: 100px;
+        background-color: rosybrown; */
+        /* transform: rotate(45deg); */
+      }
+      div:active {
+        width: 300px;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

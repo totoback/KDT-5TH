@@ -1,0 +1,158 @@
+body {
+  background-image: url(./img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  width: 100%;
+}
+.container .heroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+  max-width: 700px;
+}
+.container .heroes .hero {
+  width: 80px;
+  height: 90px;
+  margin: 4px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  transform: skewX(-14deg);
+  overflow: hidden;
+  background-color: gray;
+}
+.container .heroes .hero:hover {
+  transform: skew(-14deg) scale(1.3);
+  border-color: orange;
+  background-color: orange;
+  transition: transform 0.1s, background-color 0.5s, border-color 0.5s;
+  /* 효과 0.1초, 백그라운드 컬러 0.5, 보더컬러 0.5 애니매이션줌 */
+  overflow: hidden;
+  z-index: 1;
+}
+.container .heroes .hero .img {
+  width: 140%;
+  height: 100%;
+  transform: skewX(14deg) translateX(-10px);
+  background-position: center;
+  background-size: cover;
+}
+.container .heroes .hero:nth-child(1) .img {
+  background-image: url("./img/hero1.png");
+}
+.container .heroes .hero:nth-child(2) .img {
+  background-image: url("./img/hero2.png");
+}
+.container .heroes .hero:nth-child(3) .img {
+  background-image: url("./img/hero3.png");
+}
+.container .heroes .hero:nth-child(4) .img {
+  background-image: url("./img/hero4.png");
+}
+.container .heroes .hero:nth-child(5) .img {
+  background-image: url("./img/hero5.png");
+}
+.container .heroes .hero:nth-child(6) .img {
+  background-image: url("./img/hero6.png");
+}
+.container .heroes .hero:nth-child(7) .img {
+  background-image: url("./img/hero7.png");
+}
+.container .heroes .hero:nth-child(8) .img {
+  background-image: url("./img/hero8.png");
+}
+.container .heroes .hero:nth-child(9) .img {
+  background-image: url("./img/hero9.png");
+}
+.container .heroes .hero:nth-child(10) .img {
+  background-image: url("./img/hero10.png");
+}
+.container .heroes .hero:nth-child(11) .img {
+  background-image: url("./img/hero11.png");
+}
+.container .heroes .hero:nth-child(12) .img {
+  background-image: url("./img/hero12.png");
+}
+.container .heroes .hero:nth-child(13) .img {
+  background-image: url("./img/hero13.png");
+}
+.container .heroes .hero:nth-child(14) .img {
+  background-image: url("./img/hero14.png");
+}
+.container .heroes .hero:nth-child(15) .img {
+  background-image: url("./img/hero15.png");
+}
+.container .heroes .hero:nth-child(16) .img {
+  background-image: url("./img/hero16.png");
+}
+.container .heroes .hero:nth-child(17) .img {
+  background-image: url("./img/hero17.png");
+}
+.container .heroes .hero:nth-child(18) .img {
+  background-image: url("./img/hero18.png");
+}
+.container .heroes .hero:nth-child(19) .img {
+  background-image: url("./img/hero19.png");
+}
+.container .heroes .hero:nth-child(20) .img {
+  background-image: url("./img/hero20.png");
+}
+.container .heroes .hero:nth-child(21) .img {
+  background-image: url("./img/hero21.png");
+}
+.container .heroes .hero:nth-child(19) .img {
+  background-image: url("./img/hero19.png");
+}
+.container .heroes .hero:nth-child(20) .img {
+  background-image: url("./img/hero20.png");
+}
+.container .heroes .hero:nth-child(21) .img {
+  background-image: url("./img/hero21.png");
+}
+.container .heroes .hero:nth-child(22) .img {
+  background-image: url("./img/hero22.png");
+}
+.container .heroes .hero:nth-child(23) .img {
+  background-image: url("./img/hero23.png");
+}
+.container .heroes .hero:nth-child(24) .img {
+  background-image: url("./img/hero24.png");
+}
+.container .heroes .hero:nth-child(25) .img {
+  background-image: url("./img/hero25.png");
+}
+.container .heroes .hero:nth-child(26) .img {
+  background-image: url("./img/hero26.png");
+}
+.container .heroes .hero:nth-child(27) .img {
+  background-image: url("./img/hero27.png");
+}
+.container .heroes .hero:nth-child(28) .img {
+  background-image: url("./img/hero28.png");
+}
+.container .heroes .hero:nth-child(29) .img {
+  background-image: url("./img/hero29.png");
+}
+.container .heroes .hero:nth-child(30) .img {
+  background-image: url("./img/hero30.png");
+}
+.container .heroes .hero:nth-child(31) .img {
+  background-image: url("./img/hero31.png");
+}
+.container .heroes .hero:nth-child(32) .img {
+  background-image: url("./img/hero32.png");
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  max-width: 300px;
+  width: 100%;
+  /* margin: 0 auto;
+  display: block; */
+}
