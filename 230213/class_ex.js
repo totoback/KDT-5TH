@@ -48,6 +48,6 @@ class Triangle extends Shape{
  const tri = new Triangle(10, 10);
  const cir = new Circle(3);
 
- console.log(rec.Rectangle());
- console.log(tri.Triangle());
- console.log(cir.Circle());
+ console.log(rec.getArea());
+ console.log(tri.getArea());
+ console.log(cir.getArea());
