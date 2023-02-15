@@ -1,4 +1,5 @@
 //생성자 함수
+//호이스팅 가능
 const hyundai = new Car('hyundai', 'blue');
 // const porsche = new Car('porshe', 'black');
 // const toyota = new Car('toyota', 'white');
@@ -17,6 +18,7 @@ function Car(brand, color){
 
 
 //클래스 버전
+//호이스팅 불가능
 class ClassCar{
   constructor(brand, color){
     this.brand = brand;

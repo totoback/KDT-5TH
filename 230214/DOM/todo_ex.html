@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="./todo.js"></script>
+    <link rel="stylesheet" href="./todo.css" />
+    <style>
+      * {
+        margin: 0;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .header {
+        background-color: orange;
+        height: 60px;
+      }
+      .header h1 {
+        text-align: center;
+        line-height: 60px;
+      }
+      .contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .input-part {
+        padding: 30px 0px;
+      }
+      .list-part .todo-list {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Tetz Todo List</h1>
+    </div>
+    <div class="contents">
+      <div class="input-part">
+        <input type="text" class="input-task" />
+        <input type="button" class="input-btn" value="추가" />
+      </div>
+      <div class="list-part">
+        <ul class="todo-list"></ul>
+      </div>
+    </div>
+  </body>
+  <script>
+    const addBtn = document.querySelector(".input-btn");
+    const todoList = document.querySelector(".todo-list"); //ul태그
+    const inputTask = document.querySelector(".input-task"); //input태그
+
+    addBtn.addEventListener("clcik", function(){
+      //addBtn버튼에 클릭 이벤트가 발생하면
+      const list = document.createElement("li");
+      //html li태그 만들기
+      if (!inputTask.value){
+        inputTask.setAttribute("placeholder", "내용을 입력해주세요");
+      }
+    })
+
+    //버튼에 클릭 이벤트가 발생하면
+    // const list = document.createElement("li"); //html li태그 만들기
+    // if (!inputTask.value) {
+    //   //할 일 입력창에 내용이 입력되지 않으면 alert 발생
+    //   alert("내용을 입력해 주세요!");
+    // } else {
+    //   list.innerText = inputTask.value; //li 추가
+    //   todoList.appendChild(list); //할 일 리스트창에 자식으로 붙이기
+    //   inputTask.value = ""; //할 일 입력창 초기화
+    // }
+
+    // list.addEventListener("click", function () {
+    //   list.style.textDecoration = "line-through";
+    // });
+  </script>
+</html>

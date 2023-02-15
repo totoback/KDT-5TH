@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li>1</li>
+    <li class="list">2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+</body>
+<script>
+  //remove 삭제
+  //parentNode-첫번째 요소에 추가
+  const listEl = document.querySelector(".list");
+  console.log(listEl.parentNode);
+
+  //childNodes 자식요소에 추가
+  const ulEl = document.querySelector("ul");
+  console.log(ulEl.childNodes);
+  console.log(ulEl.children);
+</script>
+</html>

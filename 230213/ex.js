@@ -9,9 +9,10 @@ function Car(brand, color) {
 
 // 생성자 함수를 상속
 function ElecCar(brand, color, fuel){
+  //call이라는 메서드 사용 해야함
   Car.call(this, brand, color); //super랑 같은 역할을 함 
   this.fuel = fuel;
-  
+  //오버라이딩 구현
   this.drive = function () {
     console.log(`${this.brand}의 ${this.color}색 자동차가 ${this.fuel}로 주행합니다.`)
   }

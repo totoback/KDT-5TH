@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <!-- <li onclick="showThis(this)">1</li>
+    <li onclick="showThis(this)">2</li>
+    <li onclick="showThis(this)">3</li>
+    <li onclick="showThis(this)">4</li> -->
+    <!-- <li onclick="deleteThis(this)">1</li>
+    <li onclick="deleteThis(this)">2</li>
+    <li onclick="deleteThis(this)">3</li>
+    <li onclick="deleteThis(this)">4</li> -->
+    <li class="list">1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ul>
+</body>
+<script>
+  // tihs는 자기자신 노드를 가르킨다
+  // function showThis(t){
+  //   console.log(t);
+  // }
+  function deleteThis(t){
+    t.remove();
+  }
+
+  //onclick은 this
+  // e(매게변수):해당 브라우저의 이벤트 객체르 받아옴
+  // 특정개체에 target 값을 주자
+  const listEl = document.querySelector(".list");
+  listEl.addEventListener("click", function(e){
+    e.target.remove();
+  });
+</script>
+</html>

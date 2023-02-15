@@ -24,7 +24,7 @@ class ElecCar extends Car{ //extends로 상속 받아온다.
   // }
 };
 
-//#Overriding
+//#Overriding - 부모의 있는 메소드를 변경하는 행위
 const hyundai = new Car('hyundai', 'blue');
 hyundai.showSpec();
 
@@ -33,8 +33,8 @@ tesla.showSpec();
 // tesla.showFuel();
 
 
-//instanceof
-console.log(hyundai instanceof Car);
+//instanceof - 특정객체가 어떤 클래스로 만들어졌는지 확인할 수 있다.
+console.log(hyundai instanceof Car); //true
 console.log(tesla instanceof ElecCar);
 
 //super
