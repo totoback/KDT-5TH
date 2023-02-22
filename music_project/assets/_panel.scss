@@ -1,0 +1,29 @@
+section{
+  position: absolute;
+  width: 20vw;
+  height: 65vh;
+  left: 50%;
+  top: 150%;
+  margin-left: -10vw;
+  margin-top: -32.5vh;
+  
+  //section article
+  article{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    //section article .inner
+    .inner{
+      padding: 5vh 2.5vw 8vh;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 10px 10px 20px rgb(0 0 0 / 5%);
+      opacity: 0.6;
+    }
+  }
+}

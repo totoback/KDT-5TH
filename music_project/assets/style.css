@@ -1,0 +1,152 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 16px;
+}
+
+figure {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, dodgerblue, rgb(120, 240, 180), rgb(250, 254, 131));
+  overflow: hidden;
+}
+figure h1 {
+  position: absolute;
+  text-align: center;
+  top: 35px;
+  left: 5%;
+  color: white;
+}
+figure h1 strong {
+  font-size: 28px;
+}
+figure h1 span {
+  font-size: 13px;
+  font-weight: 300;
+}
+figure > p {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 300;
+  font-size: 13px;
+  text-align: center;
+  color: #aad88b;
+}
+figure .menu {
+  position: absolute;
+  top: 45px;
+  right: 5%;
+  color: #000;
+}
+figure .menu svg {
+  font-size: 24px;
+  color: white;
+}
+figure section {
+  position: absolute;
+  width: 20vw;
+  height: 65vh;
+  left: 50%;
+  top: 150%;
+  margin-left: -10vw;
+  margin-top: -32.5vh;
+}
+figure section article {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+figure section article .inner {
+  padding: 5vh 2.5vw 8vh;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+  opacity: 0.6;
+}
+figure .btnPrev,
+figure .btnNext {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20vw, -50%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0;
+  padding-left: 20px;
+  cursor: pointer;
+}
+figure .btnPrev::before, figure .btnPrev::after,
+figure .btnNext::before,
+figure .btnNext::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  background-color: #fff;
+  transform-origin: left center;
+  transform: rotate(-180deg);
+  transition: 0.5s;
+}
+figure .btnPrev::after,
+figure .btnNext::after {
+  transform: rotate(180deg);
+}
+figure .btnPrev span,
+figure .btnNext span {
+  font-size: 16px;
+  color: #fff;
+  transition: 0.5s;
+}
+figure .btnPrev:hover span,
+figure .btnNext:hover span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+figure .btnPrev:hover::before,
+figure .btnNext:hover::before {
+  transform: rotate(-30deg);
+}
+figure .btnPrev:hover::after,
+figure .btnNext:hover::after {
+  transform: rotate(30deg);
+}
+figure .btnNext {
+  transform: translate(calc(20vw - 60px), -50%);
+  padding-left: 0;
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+figure .btnNext::before, figure .btnNext::after {
+  transform-origin: right center;
+}
+figure .btnNext:hover span {
+  transform: translateX(-100%);
+  opacity: 0;
+}/*# sourceMappingURL=style.css.map */
