@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      window.localStorage.setItem("name", "toto");
+      //저장하는 방법 set
+      console.log(window.localStorage.getItem("name"));
+      //콘솔로그로 확인 get
+
+      window.localStorage.setItem("number", 1);
+      //set
+      const number = window.localStorage.getItem("number");
+      //get
+      console.log(number);
+      console.log(typeof number);
+
+      const tetz = {
+        name: "이효석",
+        isOld: true,
+        hobby: ["음주", "콜라", "플스", "자전거"],
+      };
+
+      const jsonTetz = JSON.stringify(tetz);
+      window.localStorage.setItem("tetz", jsonTetz);
+
+      const jsonTetzfromLocal = window.localStorage.getItem("tetz");
+      const objtetz = JSON.parse(jsonTetzfromLocal);
+      console.log(objtetz);
+
+      window.localStorage.setItem("pororo", "뽀로로입니다");
+      console.log(window.localStorage.getItem("pororo"));
+      window.localStorage.removeItem("pororo");
+      console.log(window.localStorage.getItem("pororo")); //null
+
+      window.localStorage.clear();
+      console.log(window.localStorage);
+
+      window.localStorage.setItem("tetz", "입니다");
+      window.localStorage.setItem("proro", "뽀로로");
+      console.log(window.localStorage.length);
+      console.log(window.localStorage.key(0)); //tetz
+      console.log(window.localStorage.key(1)); //pororo
+      console.log(window.localStorage.key(2)); //null
+
+      window.localStorage.clear();
+      window.localStorage.setItem("tetz", "이효석"); //브라우저가 종료되어도 살아있다.
+      window.sessionStorage.setItem("pororo", "뽀로로"); //브라우저가 종료되면 삭제된다.
+
+      window.localStorage.clear();
+      window.sessionStorage.clear();
+
+      window.localStorage.setItem("a", "홍길동");
+      window.localStorage.setItem("b", "홍길순");
+      window.localStorage.setItem("c", "아무개");
+      window.localStorage.setItem("d", "무지개");
+      window.localStorage.setItem("e", "로렘입숨");
+
+      for (let i = 0; i < window.localStorage.length; i++) {
+        const key = window.localStorage.key(i);
+        const value = window.localStorage.getItem(key);
+        console.log(`키는 ${key}, 값은 ${value}입니다`);
+      }
+
+      // const jsonTetz = JSON.stringify(tetz);
+      // consoel.log(jsonTetz);
+
+      // const jsonObj = JSON.stringify(tetz);
+      // //자바스크립트 변수를 json형태로 변경하는 것
+      // window.localStorage.setItem("tetz", jsonObj);
+      // const obj = JSON.parse(window.localStorage.getItem("tetz"));
+      // console.log(obj);
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
