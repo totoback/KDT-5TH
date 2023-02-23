@@ -6,6 +6,7 @@ section{
   top: 150%;
   margin-left: -10vw;
   margin-top: -32.5vh;
+  transition: 1s;
   
   //section article
   article{
@@ -14,6 +15,12 @@ section{
     top: 0;
     width: 100%;
     height: 100%;
+    &.on{
+      .inner{
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
 
     //section article .inner
     .inner{
@@ -24,6 +31,111 @@ section{
       border-radius: 20px;
       box-shadow: 10px 10px 20px rgb(0 0 0 / 5%);
       opacity: 0.6;
+      transform: scale(0.8);
+      transition: 1s;
+      .pic{
+        width: 15vw;
+        height: 15vw;
+        position: relative;
+        background-size: 0;
+        &::before,
+        &::after{
+          content: "";
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          border-radius: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          background-image: inherit;
+        }
+        &::before{
+          transform: translateY(10%);
+          filter: blur(30px) brightness(100%);
+          opacity: 0.4;
+        }
+        &.on {
+          &::before{
+            animation: rotation2 4s linear infinite;
+            //4초통안 일정한 속도로 애니매이션2 작동
+          }
+          &::after{
+            animation: rotation 4s linear infinite;
+            //4초통안 일정한 속도로 애니매이션 작동
+          }
+        }
+        .dot{
+          position: absolute;
+          width: 2.5vw;
+          height: 4.5vh;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 3;
+          box-shadow: inset 5px 5px 10px rgba(0,0,0,0.2);
+          background-color: #fff;
+        }
+      }
+      .text{
+        position: absolute;
+        width: 15vw;
+        text-align: center;
+        margin-top: 60px;
+        letter-spacing: 1px;
+        h2{
+          margin-bottom: 18px;
+        }
+        p{
+          color: #888;
+          font-weight: 300;
+          font-size: 15px;
+        }
+        .control{
+          display: flex;
+          margin-top: 50px;
+          justify-content: space-around;
+          li{
+            cursor: pointer;
+            opacity: 0.6;
+            transition: 0.5s;
+            &.play {
+              transform: scale(1.5);
+              opacity: 0.8;
+            }
+            &:hover{
+              transform: scale(1.5);
+              opacity: 1;
+              &.play{
+                transform: scale(2);
+              }
+            }
+          }
+        }
+      }
     }
+  }
+}
+
+//키프레임 정의
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation2 {
+  0% {
+    transform: translateY(10%) rotate(0deg);
+  }
+  100%{
+    transform: translateY(10%) rotate(360deg);
   }
 }

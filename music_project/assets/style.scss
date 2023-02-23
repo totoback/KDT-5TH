@@ -37,6 +37,10 @@ figure{
       font-weight: 300;
     }
   }
+  //PANEL
+  @import "panel";
+  //BTN
+  @import "btns";
   //figure > p
   > p{
     position: absolute;
@@ -60,8 +64,5 @@ figure{
       color: white;
     }
   }
-  //PANEL
-  @import "panel";
-  //BTN
-  @import "btns";
+  
 }
